@@ -1,0 +1,19 @@
+.Header{
+    background-color: #6e1da2 !important;
+    padding: 0.9rem !important;
+}
+.Header h5{
+    font-style:italic !important;
+
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Ultra', sans-serif;   
+	
+	
+
+}
+.Dropdown{
+    float: right !important;
+    margin-top: -35px !important;
+    color: #fff !important;
+}
