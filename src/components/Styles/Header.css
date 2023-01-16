@@ -2,18 +2,26 @@
     background-color: #6e1da2 !important;
     padding: 0.9rem !important;
 }
-.Header h5{
+.Header h2{
     font-style:italic !important;
 
 	color: #fff;
 	font-weight: 700;
 	font-family: 'Ultra', sans-serif;   
-	
+	/* font-size: 1.9rem !important; */
 	
 
 }
 .Dropdown{
     float: right !important;
-    margin-top: -35px !important;
+    margin-top: -40px !important;
     color: #fff !important;
+}
+#dropdown-basic{
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 1.3rem !important;
+}
+.Logout-btn a{
+    text-decoration: none !important;
 }

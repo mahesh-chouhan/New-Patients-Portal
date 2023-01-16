@@ -15,14 +15,16 @@ body{
   
 }
 .login-body{
-    background-image: linear-gradient(to bottom, #f6f3fc, #fbfafe);
-    background-color: #fbfafd;
+
+    background-color: #e6effa;
 }
 .container{
     font-family: 'Helvetica Neue', sans-serif !important;
 
 }
-
+.input[type=checkbox] {
+    accent-color: red !important;
+  }
 .login-left-column{
     background-color:var(--fire-bush) ;
     background-repeat: no-repeat !important;
@@ -39,7 +41,16 @@ body{
 	font-size: 36px;
 	line-height: 42px;
 	text-transform: uppercase;
-	text-shadow: 0 2px white, 0 3px #777;
+    text-shadow: 1px 1px 1px #957dad,
+    1px 1px 1px #957dad,
+    1px 2px 1px #957dad,
+    1px 2px 1px #957dad,
+    1px 2px 1px #957dad,
+    1px 2px 1px #957dad,
+    1px 3px 5px rgba(16, 16, 16, 0.5),
+    1px 5px 10px rgba(16, 16, 16, 0.4),
+    1px 10px 30px rgba(16, 16, 16, 0.3),
+    1px 15px 50px rgba(16, 16, 16, 0.2);
 }
 .Login_auth_container{
     display: flex;

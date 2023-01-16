@@ -17,8 +17,7 @@ const navigate = useNavigate();
       <div className="row">
         <div className="col-md-6 login-left-column col d-flex align-items-center justify-content-center">
           <div className="m-5">
-            {/* <img src="http://localhost:3002/static/media/GraphicPatternforLogin.2479f541a24ae2918640.svg" alt="" /> */}
-
+           
             <h1>Welcome To <br></br> patient Home Page</h1>
           </div>
         </div>
@@ -30,7 +29,7 @@ const navigate = useNavigate();
                         
                     </div>
                     <div className="input-group flex-nowrap mb-4">
-                        <span className="input-group-text" style={{ background:"#f5f1fc" }}>
+                        <span className="input-group-text" style={{ background:"#f5f1fc",border:"1px solid #5783ff" }}>
                             <FaUserAlt
                             size={20}
                             style={{ color: "#6e1da2" }}
@@ -46,7 +45,7 @@ const navigate = useNavigate();
                             />
                     </div>
                     <div className="input-group flex-nowrap position-relative mb-4">
-                        <span className="input-group-text" style={{ background:"#f5f1fc" }}>
+                        <span className="input-group-text" style={{ background:"#f5f1fc", border:"1px solid #5783ff" }}>
                         <AiFillLock
                         size={20}
                         style={{ color: "#6e1da2" }}
@@ -57,7 +56,7 @@ const navigate = useNavigate();
                             className="form-control w-100"
                             placeholder="Password"
                             name="password"
-                            
+                   
                             required
                             />
                     </div>
@@ -65,9 +64,9 @@ const navigate = useNavigate();
                     <div className="mb-4">
                         <input
                             type="checkbox"
-                            className="me-2 Remember"
+                            className="me-1 Remember"
                             
-                            style={{ border: "1px solid #ced4da",  marginTop:"-15px" }}
+                            style={{ border: "1px solid #ced4da",  accentColor: "#0d6efd",  marginTop:"-15px" }}
                             />
                         Remember me
                         <button  className=" btn button__text" onClick={HandleClick}>Login

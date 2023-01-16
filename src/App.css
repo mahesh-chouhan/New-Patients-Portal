@@ -1,0 +1,17 @@
+:root {
+    --surface-color: #fff;
+    --ghost-white: #f8f9fd;
+    --header-color: #fbfafd;
+    --header-img-color:linear-gradient(to bottom, #f6f3fc, #fbfafe);
+    --fire-bush: #6e1da2;
+    --granite-gray: #626a6a;
+    --baltic-sea: #33383c;
+    --trans: all 0.5s ease-in-out;
+    --curve: 40;
+    --theme-box-shadow-light:#0000001c;
+        --theme-box-shadow-medium: #00000021;
+        --font-family: 'Helvetica Neue', sans-serif !important;
+  }
+  html{
+    font-family: 'Helvetica Neue', sans-serif !important;
+  }

@@ -1,0 +1,239 @@
+body{
+    font-family: 'Helvetica Neue', sans-serif !important;
+}
+html{
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+.PracticeName{
+  margin-top: 1% !important;
+}
+.requestAppointments{
+
+    border: none;
+    background-color: #5783ff !important;
+    float: right !important;
+   
+     width: 310px;
+    color: white !important;
+    justify-content: end;
+    align-items: flex-end !important;
+    float: inline-end !important;
+     position: relative;
+     margin-right: -3% !important;
+    font-size: 1.1rem !important;
+    border-radius: 25px !important; 
+    margin-bottom: 30px !important;
+   
+  }
+  .requestAppointments:hover{
+    background-color: #3665e7 !important;
+    
+
+  }
+.card{
+    background-image: var(--header-img-color);
+    background-color: var(--header-color);
+}
+
+.pagination > li > a
+{
+    background-color: none;
+    float: left !important;
+    border: 0 !important;
+    
+    border-radius: 50px !important;
+    gap: 40px !important;
+}
+
+.pagination{
+  float: right !important;
+  margin-right: 20px !important;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{ 
+    color: white !important;
+}
+@media only screen and (max-width: 600px) {
+  .page-item .page-link {
+width: 45px !important;
+padding: 10px !important;
+ 
+  }
+}
+.pagination > .active > a
+{
+    color: white !important;
+    background-color: #6e1da2 !important;
+    border: solid 1px #6e1da2 !important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #6e1da2 !important;
+    border: solid 1px #6e1da2;
+}
+ 
+  .page-item .page-link {
+    float: left !important;
+    color: black !important; 
+
+  }
+ #srchitem{
+    float: right !important;
+ }
+ 
+ .table{
+  border-collapse: collapse !important;
+  
+ }
+
+.data-table {
+  margin-bottom: 1% !important;
+  margin-top: 5px;
+  border: 1px solid gray !important;
+  border-radius: 8px;
+
+ }
+td {
+  font-size:1rem;
+  font-weight: 400 !important;
+  color: black;
+  text-align: left;
+  padding: 0.7rem !important;
+}
+
+.table{
+  border-collapse:collapse;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+.table th {
+  background-image: var(--header-img-color);
+  background-color: var(--header-color);
+  padding: 0.7rem !important;
+  text-align: left !important;
+  font-size: 1.2rem !important;
+  /* border-top: 0.9px solid #6e1da2 !important; */
+  font-family: 'Helvetica Neue', sans-serif !important;
+  font-weight: 500 !important;
+  border-bottom: solid 0.5px rgba(0 0 0 / 70%)  !important;
+  /* border-top: 1px solid gray !important; */
+}
+
+td:nth-child(2){
+  border-right:1px solid white;
+}
+td:nth-child(3){
+  border-right:1px solid white;
+}
+td:nth-child(1){
+  border-right:1px solid white;
+}
+th:nth-child(2){
+  border-right:1px solid var(--header-color);
+}
+th:nth-child(3){
+  border-right:1px solid var(--header-color);
+}
+th:nth-child(1){
+  border-right:1px solid var(--header-color);
+}
+ 
+  
+ 
+
+ 
+ 
+ .btyt {
+  float: right;
+
+  width: 5%;
+  padding: 4px 9px;
+ }
+ #Exportbtn{
+  color:white !important;
+  float: Left !important;
+  background-color: #5783ff;
+  padding: 4px 15px;
+ }
+
+
+.searchOrder {
+
+
+position: absolute !important;
+background-image: var(--header-img-color) !important;
+  background-color: var(--header-color) !important;
+margin-left: 10px !important;
+margin-top: 10px;
+float: right !important;
+color: #7B7B7B;
+}
+.search-label span{
+    display: none !important;
+}
+
+
+#GetUserbtn a{
+color: black;
+text-decoration: none;
+}
+
+#GetUserbtn1 a{
+color:white;
+text-decoration: none;
+padding-left: 10px;
+font-size: 16px;
+}
+.react-bootstrap-table table { table-layout: auto !important; }
+
+ 
+input {
+background-image: var(--header-img-color);
+  background-color: var(--header-color);
+
+border: 1px solid #5783ff !important;
+}
+
+::placeholder{
+padding: 8px;
+}
+#hrline{
+  left: -15px;
+    width: calc(100% + 22px) !important;
+    margin-left: -12px !important;
+}
+#clearButton {
+position: absolute;
+float: right;
+
+height: 25px;
+width: 25px;
+margin-top: 7px !important;
+right: 5%;
+border-radius: 20px;
+background: #d8d4d4;
+color: white;
+font-weight: bold;
+text-align: center;
+cursor: pointer;
+}
+#clearButton:hover {
+background: rgb(183, 177, 177);
+}
+#imgs{
+margin-top: -8px !important;
+margin-right: -10px !important;
+}
+@media only screen and (max-width: 600px) {
+#clearButton{
+margin-right: 15% !important;
+
+}
+}
+
+

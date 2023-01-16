@@ -6,7 +6,7 @@
     padding-top: 20px;
     border: 0 !important;
     border: none !important;
-    font-size: 19px !important;
+    font-size: 17px !important;
    
   }
   .nav-tabs .nav-link{
@@ -15,10 +15,13 @@
     color: gray !important;
     display: flex;
  
-      font-weight: bold;
+
 
      
    
+  }
+  .nav-tabs .nav-link a:hover{
+    color: black !important;
   }
  
   .nav-tabs .nav-item.show .nav-link:hover, .nav-tabs .nav-link:focus{
@@ -40,7 +43,218 @@
  
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
         border: 0 !important;
+        color: #681c9a !important;
         }
         .nav.nav-tabs .nav-link.active{
-            color: #681c9a !important;
+            /* color: #681c9a !important;
+             */
+             border-bottom: 2px solid #681c9a !important;
+             color: #681c9a !important;
+            font-size: 1.3rem !important;
+            font-weight: 700;
         }
+        .nav.nav-tabs .nav-link :hover{
+      
+          color: #681c9a !important;
+        }
+
+    .profileUpdate{
+      text-align: center !important;
+      margin-top: 5%;
+    }
+    .data-table1 {
+      margin-bottom: 1% !important;
+      margin-top: 5px;
+      border-top: 2px solid gray !important;
+      border-bottom: 1px solid gray !important;
+      border-left: 1px solid gray;
+      border-radius: 8px;
+      height: 600px;
+      width: 550px !important;
+     
+     }
+    .data-table2 {
+      margin-bottom: 2% !important;
+      margin-top: 5px;
+      border-top: 2px solid gray !important;
+      border-bottom: 1px solid gray !important;
+      border-right: 1px solid gray;
+      /* border-left: 1px solid gray; */
+      border-radius: 8px;
+      height: 600px;
+      width: 550px !important;
+     }
+     .header h6 {
+      font-family: 'Helvetica Neue', sans-serif !important; 
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: 1rem !important;
+    }
+    .profileUpdate h4{
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .profileUpdate p{
+      font-weight: 400 !important;
+      font-size: 0.9rem !important;
+    }
+    .contact p{
+      font-weight: 700;
+      font-size: 1rem !important;
+    }
+    .email p{
+      font-size: 1rem !important;
+      font-family: 'Helvetica Neue', sans-serif !important; 
+    }
+    .email p a{
+      text-decoration: none;
+      font-size: 1rem !important;
+      font-family: 'Helvetica Neue', sans-serif !important; 
+    }
+    .email p a:hover{
+      text-decoration: underline;
+    }
+  .header1{
+    text-align: center !important;
+  }
+  .profileUpdate1{
+    text-align: center !important;
+    margin-top: 5%;
+  }
+  .update_button {
+    border: none;
+    background-color: #5783ff !important;
+   width: 250px;
+    padding: 3px 25px !important;
+    color: white !important;
+    justify-content: end;
+    align-items: flex-end !important;
+    float: inline-end !important;
+     position: relative;
+ 
+    font-size: 1rem !important;
+    border-radius: 25px !important; 
+    margin-bottom: 30px !important;
+
+  }
+  .update_button:hover{
+    background-color: #3665e7 !important;
+  }
+  .sectionHome{
+
+    margin-top: 2%;
+    
+  }   .data-table3 {
+    margin-bottom: 2% !important;
+    margin-top: 5px;
+    border-top: 2px solid gray !important;
+    border-bottom: 1px solid gray !important;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 8px;
+    height: 600px;
+    width: 380px !important;
+    margin-left: 15px !important;
+    border-collapse: collapse !important;
+   }
+   .practice-activity {
+    background-image: var(--header-img-color);
+    background-color: var(--header-color);
+    background-size: 100% !important;
+    padding: 0.9rem !important;
+    text-align: center !important;
+    font-size: 1.2rem !important;
+    width: 378px !important;
+    margin-left: -12px !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* border-top: 0.9px solid #6e1da2 !important; */
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid gray !important;
+   }
+   .Sectionbutton{
+    border: none;
+    background-color: #5783ff !important;
+    width: 220px;
+    padding: 3px 25px !important;
+    color: white !important;
+    justify-content: end;
+    align-items: flex-end !important;
+    float: inline-end !important;
+     position: relative;
+     margin: 15px !important;
+     margin-top: 28px !important;
+    font-size: 1rem !important;
+    border-radius: 25px !important; 
+    margin-bottom: 30px !important;
+   }
+   .Sectionbutton:hover{
+    background-color: #3665e7 !important;
+   }
+   .Section2Head {
+    text-align: center !important;
+   }
+   .Section2Head h5{
+    font-size: 1rem !important;
+    margin-top: 12% !important;
+   }
+   .Section2Head p{
+    font-family: 'Helvetica Neue', sans-serif !important; 
+    font-size: 0.8rem !important;
+    margin-top: 16px !important;
+    margin-bottom: 8px !important;
+   }
+   .Section2Image img{
+    background-color: white !important;
+    color: white !important;
+   }
+   #span{
+    margin-top: 54px !important;
+   }
+   .header2 span{
+    font-size: 1rem !important;
+  
+    font-weight: 700;
+  
+   }
+   .header2 h6 {
+    font-weight: 700 !important;
+   }
+
+   ul.timeline-3 {
+    list-style-type: none;
+    position: relative;
+  }
+  ul.timeline-3:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  ul.timeline-3 > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  ul.timeline-3 > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #5783ff;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+  ul.timeline-3> li a{
+    font-weight: 700 !important;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
