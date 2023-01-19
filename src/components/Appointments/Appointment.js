@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import AppointmentTable from "./AppointmentTable";
 import { BsFillCalendarPlusFill } from "react-icons/bs";
+import ModalsPopup from "./ModalsPopup";
 
+function Appointment(props) {
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = (breakpoint) => 
+  {
+    setShow(true);
+    setFullscreen(breakpoint);
 
-function Appointment() {
-
-
+  }
+  const values = [true, 'sm-down', 'md-down', 'lg-down', 'xl-down', 'xxl-down'];
   return (
     <>
       <hr id="hrline" style={{width:"100%"}} />
@@ -33,13 +41,14 @@ function Appointment() {
                   </div>
                   <div className="col-md-6">
                     
-                  <button className=" btn  requestAppointments">
+                  <button className=" btn  requestAppointments" onClick={handleShow} >
                   <BsFillCalendarPlusFill size={20}   style={{
                       marginRight: "5px",
                       marginTop:"-3px",
                        
                       color: "#fff ",
                     }} />  Request an Appointment
+                   
                   </button>
                   </div>
                   
@@ -57,7 +66,9 @@ function Appointment() {
             </div>
           </div>
         <AppointmentTable />
+
     </div>
+    <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} fullscreen={fullscreen} />
               </>
   );
 }

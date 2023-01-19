@@ -10,15 +10,17 @@ import  Image6 from '../../assets/Web.png'
 import { FaCommentsDollar } from "react-icons/fa";
 import { ImLink } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
+import { IoMdContact } from "react-icons/io";
 import HomeStarRating from "./HomeStarRating";
 import TimeLine from "./TimeLine";
+
 function HomeTab() {
   return (
     <div>
  
     <div className="container-fluid sectionHome">
       <div className="row">
-         <div className="col-md-5 data-table1">
+         <div className="col-md-4 data-table1">
             <div className="profileUpdate">
 
             <img
@@ -29,11 +31,11 @@ function HomeTab() {
               <div className="header"><h6>Welcome</h6></div>
               <div><h4>Kiran O'Darekar</h4></div>
                <p>Ap #265-2335 Mauris Rd.<br /> Lima,  Ontario, 36252</p>
-               <div className="contact" ><p><b>Contact</b>:975-793-0276</p><span></span></div>
-               <div className="email"><p><MdEmail size={22} style={{marginRight:"10px" }} />Email:<a href="#">kiran.darekar@gmail.com</a></p></div>
+               <div className="contact" ><p><IoMdContact size={29} style={{marginTop:"-3px",marginRight:"4px", }} />975-793-0276</p><span></span></div>
+               <div className="email"><p><MdEmail size={29} style={{marginRight:"4px",marginTop:"-3px" }} /><a href="#">kiran.darekar@gmail.com</a></p></div>
                <div className="visit" ><p><b>First Visit</b>:- 15/12/2021</p><span></span></div>
                <div  style={{marginTop:"-15px"}} className="visit" ><p><b>Last Visit</b>:-12/12/2022</p><span></span></div>
-                <div><button className="btn btn-primary update_button" >update Profile</button></div>
+                <div><button className="btn btn-primary update_button" >Update Profile</button></div>
           
               </div>
 
@@ -89,7 +91,7 @@ style={{ marginTop:"80px" }}
         </div>
        
           </div>
-          <div className="col-md-2 data-table3">
+          <div className="col-md-3 data-table3">
            
           <h4  className="practice-activity">Activity Stream</h4>
           <TimeLine />
