@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {handleShow} from './Appointment';
-import '../Styles/Appointment.css';
 
-import RequestAnAppointment from './RequestAnAppointment';
+
+
     function ModalsPopup({show,handleClose,handleShow , fullscreen}) {
         
 
@@ -24,9 +23,7 @@ import RequestAnAppointment from './RequestAnAppointment';
           maxHeight: 'calc(95vh - 120px)',
           
         }} >
-          {
-            <RequestAnAppointment    />
-          }
+         
         </Modal.Body>
    
       </Modal>

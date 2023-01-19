@@ -12,7 +12,7 @@ import {
   Container,
 } from "react-bootstrap";
 import Appointment from "../Appointments/Appointment";
-import Statement from "../Statement/Statement";
+
 import AccountRecivable from "../Statement/AccountRecivable";
 import { BsFillCalendarPlusFill } from "react-icons/bs";
 import { BsStickiesFill } from "react-icons/bs";
@@ -28,6 +28,7 @@ import MassageBox from "../Inbox/MassageBox";
 import TreatmentPlans from "../TreatmentPlan/TreatmentPlans";
 import "../Styles/Home.css";
 import HomeTab from "./HomeTab";
+import Statement from "../Statement/Statement";
 
 function TabComponent() {
   return (

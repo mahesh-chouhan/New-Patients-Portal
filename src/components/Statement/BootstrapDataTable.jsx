@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Appointment.css";
-import data from './Ac.json';
+import data from './Data.json';
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory from "react-bootstrap-table2-paginator";
@@ -15,7 +15,6 @@ import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import { FaSearch } from "react-icons/fa";
 // import LoginFooter from "../Login/LoginFooter";
 import sikkaCsv from '../../assets/SikkaCsv.png'
-import { AiTwotoneFileText } from "react-icons/ai";
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
 const ClearButton = (props) => {
@@ -32,23 +31,23 @@ const ClearButton = (props) => {
 
 const columns = [
   {
-    dataField: "AR < 30 Days",
-    text: "AR < 30 Days",
+    dataField: "Date",
+    text: "Date",
     sort: true,
   },
   {
-    dataField: "AR 31-60 Days",
-    text: "AR 31-60 Days",
+    dataField: "Payment Type",
+    text: "Payment Type",
     sort: true,
   },
   {
-    dataField: "AR 61-90 Days",
-    text: "AR 61-90 Days",
+    dataField: "Description",
+    text: "Description",
     sort: true,
   },
   {
-    dataField: "AR > 90 Days",
-    text: "AR > 90 Days",
+    dataField: "Amount",
+    text: "Amount",
     sort: true,
   },
 ];
@@ -60,7 +59,7 @@ const defaultSorted = [
 ];
 
 const pagination = paginationFactory({
-  sizePerPage: 10,
+  sizePerPage: 5,
   paginationSize: 3,
   hideSizePerPage: true,
   lastPageText: ">>",
@@ -68,12 +67,9 @@ const pagination = paginationFactory({
   nextPageText: ">",
   prePageText: "<",
 });
-function AccountRecivable() {
+function BootstrapDataTable() {
   return (
     <div>
-<hr id="hrline" style={{width:"100%"}} />
-      <br />
-
       <div id="table" className="container-fluid">
         <ToolkitProvider
           keyField="serviceId"
@@ -150,4 +146,4 @@ function AccountRecivable() {
   );
 }
 
-export default AccountRecivable;
+export default BootstrapDataTable;

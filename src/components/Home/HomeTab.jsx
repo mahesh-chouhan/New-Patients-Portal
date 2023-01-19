@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Home.css";
 import SikkaLogo from '../../assets/sikkaLogo.png'
 import  Image1 from '../../assets/Facebook.png'
@@ -13,8 +13,24 @@ import { MdEmail } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import HomeStarRating from "./HomeStarRating";
 import TimeLine from "./TimeLine";
+import ModalsPopup from "../Feedback/ModalsPopup";
 
-function HomeTab() {
+
+
+
+function HomeTab(props) {
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = (breakpoint) => 
+  {
+    setShow(true);
+    setFullscreen(breakpoint);
+
+  }
+
+ 
+  
   return (
     <div>
  
@@ -55,7 +71,7 @@ style={{ marginTop:"80px" }}
 
    <h6> Demo Smile dental care</h6><br />
    
-   <span><FaCommentsDollar size={22} /> Fill out a Feedback Survey</span></div>
+   <span onClick={handleShow} ><FaCommentsDollar size={22} /> Fill out a Feedback Survey</span></div>
    <div className="email"><p><ImLink size={20} />Connect with us on Social Media</p></div>
    <div className="visit" >
     <span className="Section2Image">
@@ -99,6 +115,7 @@ style={{ marginTop:"80px" }}
       
       </div>
     </div>
+    <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} fullscreen={fullscreen} />
               </div>
   );
 }

@@ -14,7 +14,20 @@ html{
 }
 .requestAppointments{
 
+
+  background:var(--sky-bush) !important;
+    
     border: none;
+    /*margin-left: 10px !important;*/
+   width: 310px !important;
+   
+    color: white !important;
+    border-radius: 50px !important;
+     font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+     margin-right: -3% !important;
+    font-size: 17px;
+    float: right !important;
+    /* border: none;
     background-color: var(--sky-bush) !important;
     float: right !important;
    
@@ -28,17 +41,16 @@ html{
     font-size: 1.1rem !important;
     border-radius: 25px !important; 
     margin-bottom: 30px !important;
-   
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important; */
   }
   .requestAppointments:hover{
     background-color: var(--sky-bush-hover) !important;
-    
+    /* box-shadow:  1px 1px 2px 0 rgba(255,255,255,.5),
+                -2px -2px 4px 0 rgba(116, 125, 136, .5), 
+      inset -2px -2px 4px 0 rgba(255,255,255,.2),
+      inset 2px 2px 4px 0 rgba(0, 0, 0, .4); */
 
   }
-.card{
-    background-image: var(--header-img-color);
-    background-color: var(--header-color);
-}
 
 .pagination > li > a
 {
@@ -72,14 +84,14 @@ padding: 10px !important;
 .pagination > .active > a
 {
     color: var(--white) !important;
-    background-color: var(--fire-bush) !important;
-    border: solid 1px var(--fire-bush) !important;
+    background-color: var(--sky-bush) !important;
+    border: solid 1px var(--sky-bush) !important;
 }
 
 .pagination > .active > a:hover
 {
-    background-color: var(--fire-bush) !important;
-    border: solid 1px var(--fire-bush);
+    background-color: var(--sky-bush) !important;
+    border: solid 1px var(--sky-bush);
 }
  
   .page-item .page-link {
@@ -255,10 +267,11 @@ margin-right: 15% !important;
   opacity: 0 !important;
 }
 .appointmentmodal {
-  width: 55% !important;
+  
   overflow: scroll;
-  border-top: 2px solid var(--sky-bush) !important;
-  border: 1px solid var(--sky-bush) !important;
+  width: 580px !important;
+  max-width: calc(100% - 20px) !important;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 4px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border-radius: 8px !important;
   /* margin-bottom: 200px !important; */
 }
@@ -270,15 +283,16 @@ margin-right: 15% !important;
   text-align: center !important;
   font-size: 1.5rem !important;
  
- width: 103% !important;
- margin-left: -12px !important;
+  width: 600px !important;
+  margin-left: -12px !important;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   /* border-top: 0.9px solid var(--fire-bush) !important; */
   font-family: 'Helvetica Neue', sans-serif !important;
   font-weight: 500 !important;
-  border-bottom: 1px solid var(--sky-bush) !important;
+  
 }
+
 .react-datepicker__input-container input {
   border: 1px solid;
   font-size: 0.90rem;
@@ -345,7 +359,7 @@ margin-right: 15% !important;
   margin: 0px 20px 0px 3px  !important;
 }
 .form-check-label{
-  margin: 0px 26px 0px 3px  !important;
+  margin: 0px 22px 0px 3px  !important;
   /* margin: 0px 39px 0px 3px  !important; */
 }
 .form-select{
@@ -353,20 +367,43 @@ margin-right: 15% !important;
 }
 .btn-send{
    margin-left: 15%;
-  border: 2px solid var(--sky-bush) !important;
+   background-color: var(--sky-bush) !important;
+   /* border: 2px solid var(--white) !important; */
+   color: var(--white) !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+  
 }
 .btn-send:hover{
-  background-color: var(--sky-bush-hover) !important;
-  border: 2px solid var(--white) !important;
-  color: var(--white) !important;
+ background-color: var(--sky-bush-hover) !important;
 }
 .btn-cancel{
   float: right;
-  background-color: var(--sky-bush-hover) !important;
-  color: var(--white) !important;
+
+background-color: #e4e3e3 !important;
 }
 .btn-cancel:hover{
-  border: 2px solid var(--sky-bush) !important;
-  color: var(--font-black) !important;
-  background-color: var(--white) !important;
+  
+
+background-color: #cbc9c9 !important;
+}
+
+#style1::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+#style1::-webkit-scrollbar-track {
+  background-color: #e2e2e2;
+  border-radius: 100px;
+}
+
+#style1::-webkit-scrollbar-thumb {
+  background-color: #979797!important;
+  border-radius: 100px;
+}
+#style1{
+  overflow-y: scroll !important;
+}
+.patientHead h4{
+  font-weight: 500;
+  color: var(--fire-bush) !important;
 }

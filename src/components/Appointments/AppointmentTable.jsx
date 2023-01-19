@@ -54,7 +54,7 @@ const defaultSorted = [
 ];
 
 const pagination = paginationFactory({
-  sizePerPage: 5,
+  sizePerPage: 7,
   paginationSize: 3,
   hideSizePerPage: true,
   lastPageText: ">>",

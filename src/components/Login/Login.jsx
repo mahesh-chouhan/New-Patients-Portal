@@ -74,7 +74,7 @@ const navigate = useNavigate();
                         </div>
                                 <div className="mt-5 signup">
 			           Don't have an account?
-                    <a href="#">Sigup</a>
+                    <a href="" onClick={()=>navigate('./Sidebar')} >Sigup</a>
 				</div>
                 <div className="mt-3 text-center signup">
                     <a href="#">Forgot Your Password</a>

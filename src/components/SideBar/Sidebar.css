@@ -1,0 +1,81 @@
+
+  .react-tabs {
+    display: flex;
+
+    height: max-content !important;
+   
+    border: none !important;
+  
+  }
+  
+  .react-tabs__tab-list {
+    display: flex;
+    flex-direction: column;
+    width: 250px !important;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem !important;
+    color: var(--fire-bush) !important;
+    background: var(--header-color);
+    border-right: 1px solid gray !important;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 4px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  @media only screen and (max-width: 600px) {
+    .react-tabs  {
+        
+    
+    
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .react-tabs__tab {
+        display: inline !important;
+        float:center !important;
+   
+    
+    }
+  }
+  
+
+  .react-tabs__tab {
+   
+    list-style: none;
+    padding: 15px 6px;
+    cursor: pointer;
+    color: rgb(79, 77, 77) !important;
+  }
+  .react-tabs__tab:hover{
+    color: var(--fire-bush) !important;
+  }
+  
+  .react-tabs__tab--selected {
+    
+    border-left: 4px solid var(--fire-bush);
+    color: var(--fire-bush) !important;
+   
+  }
+  .VerticleTab{
+    margin-top: 3% !important;
+  }
+  .react-tabs__tab-panel {
+    display: none;
+    width: 100% !important;
+  }
+  
+  .react-tabs__tab-panel--selected {
+    display: block;
+  }
+  
+  .react-tabs__tab {
+    padding-left: 24px;
+  }
+  
+  .react-tabs__tab--selected {
+    padding-left: 21px;
+  }
+  
+  .panel-content {
+    text-align: center;
+  }
+  

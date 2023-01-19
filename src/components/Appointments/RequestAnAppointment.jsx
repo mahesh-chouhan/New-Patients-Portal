@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { BsFillCalendarPlusFill } from "react-icons/bs";
 const countries= [
     { id: 'AFG', name: 'Dentist' },
     { id: 'ALA', name: 'Audiologist' },
@@ -25,7 +26,7 @@ const countriesList =  countries.map((item, i)=>{
        
         
               <div>
-              <label style={{ marginTop:"9px" }} >Reason of visit:</label>
+              <label style={{ marginTop:"18px" }} >Reason of visit:</label>
               <select className="form-select" style={{ border:"1px solid #5783ff" }} aria-label=".form-select-sm example">
                 {countriesList}
               </select>
@@ -38,13 +39,13 @@ const countriesList =  countries.map((item, i)=>{
       
        
               <div>
-              <label style={{ marginTop:"9px" }} >Date:</label>
+              <label style={{ marginTop:"18px" }} >Date:</label>
               <DatePicker style={{ border:"1px solid #5783ff" ,borderRadius: '8px' }} selected={startdate} onChange={(date) => setStartDate(date)} />
               </div>
          
         
 
-              <label style={{ marginTop:"9px" }} >Time: </label>
+              <label style={{ marginTop:"18px" }} >Time: </label>
             <div style={{
                 border:"1px solid #5783ff" ,
                 borderRadius: '8px',
@@ -90,17 +91,18 @@ const countriesList =  countries.map((item, i)=>{
    
 
          
-              <label style={{ marginTop:"9px" }}  >Date:</label>
+              <label style={{ marginTop:"18px" }}  >Date:</label>
         
     
      
               <div>
-              <DatePicker style={{ border:"1px solid #5783ff" ,borderRadius: '8px' }} selected={startdate} onChange={(date) => setStartDate(date)} />
+              <DatePicker style={{ border:"1px solid #5783ff" ,borderRadius: '8px' }}
+              selected={startdate} onChange={(date) => setStartDate(date)}/>
               </div>
          
     
 
-              <label style={{ marginTop:"9px" }} >Time: </label>
+              <label style={{ marginTop:"18px" }} >Time: </label>
             <div style={{
                 border:"1px solid #5783ff" ,
                 borderRadius: '8px',
@@ -146,7 +148,7 @@ const countriesList =  countries.map((item, i)=>{
    
   
      <div>
-           <label style={{ marginTop:"9px" }}  >Contact: </label>
+           <label style={{ marginTop:"18px" }}  >Contact: </label>
             </div>
             <div  >
           
@@ -159,7 +161,7 @@ const countriesList =  countries.map((item, i)=>{
    
      <div>
       <div>
-   <label style={{ marginTop:"9px" }} >Comments: </label>
+   <label style={{ marginTop:"18px" }} >Comments: </label>
      </div>
    <div >
    <textarea style={{   border:"1px solid #5783ff" ,
@@ -168,10 +170,10 @@ const countriesList =  countries.map((item, i)=>{
    </div>
  <br />
     <div className="row">
-        <div className="col-md-9">
+        <div className="col-md-8">
 
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
             <button className="btn btn-send">Send</button>
             <button className="btn btn-cancel">cancel</button>
         </div>
