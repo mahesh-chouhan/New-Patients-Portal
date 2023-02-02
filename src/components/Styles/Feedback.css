@@ -1,0 +1,54 @@
+.FeedbackSurvay h4{
+    font-size: 1.7rem;
+    margin-top: 12px !important;
+    padding: 12px;
+    color: var(--sky-bush);
+    font-family: var(--font-family);
+}
+.FeedbackSurvay{
+    overflow: scroll;
+  
+    /* max-width: calc(100% - 20px) !important;
+    border: 1px solid #ddd; */
+    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 4px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+    /* border-radius: 8px !important; */
+}
+.SurvayQuestion{
+    padding: 20px !important;
+    
+}
+.SurvayQuestion span{
+    font-weight: 700;
+    color: var(--sky-bush);
+    font-family: var(--font-family);
+    font-size: 1.1rem !important;
+}
+.form-check-input{
+   
+}
+.btn-reset{
+   
+     font-weight: 700 !important;
+      background-color: #e4e3e3 !important;
+      margin-left: 20px !important;
+}
+      .btn-reset:hover{
+        
+      
+      background-color: #cbc9c9 !important;
+      
+}
+.btn-save{
+    font-weight: 700 !important;
+    background-color: var(--sky-bush) !important;
+    /* border: 2px solid var(--white) !important; */
+    color: var(--white) !important;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+   
+ }
+ .btn-save:hover{
+  background-color: var(--sky-bush-hover) !important;
+ }
+ /* .SurvayQuestion:nth-child(6n+6) {
+    display: flex !important;
+  } */

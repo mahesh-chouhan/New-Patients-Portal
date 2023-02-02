@@ -5,6 +5,7 @@ import {handleShow} from './Appointment';
 import '../Styles/Appointment.css';
 
 import RequestAnAppointment from './RequestAnAppointment';
+import Header from '../Constants/Header';
     function ModalsPopup({show,handleClose,handleShow , fullscreen}) {
         
 
@@ -17,6 +18,9 @@ import RequestAnAppointment from './RequestAnAppointment';
    <section>
     
       <Modal   scrollable={true} className='Full_Modal' fullscreen={fullscreen} show={show} onHide={handleClose}>
+      {
+            <Header />
+          }
         <Modal.Header closeButton>
           <Modal.Title></Modal.Title>
         </Modal.Header>

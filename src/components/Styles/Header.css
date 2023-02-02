@@ -1,20 +1,20 @@
 .Header{
     background-color: #6e1da2 !important;
-    padding: 0.9rem !important;
+   
 }
 .Header h2{
     font-style:italic !important;
 
 	color: #fff;
 	font-weight: 700;
-	font-family: var(--font-family) !important   
-	/* font-size: 1.9rem !important; */
+	font-family: var(--font-family) !important  ; 
+
 	
 
 }
 .Dropdown{
     float: right !important;
-    margin-top: -40px !important;
+  
     color: #fff !important;
 }
 #dropdown-basic{
@@ -24,4 +24,10 @@
 }
 .Logout-btn a{
     text-decoration: none !important;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100% !important;
+    right: 0 !important;
+    left: auto !important;
+    
 }

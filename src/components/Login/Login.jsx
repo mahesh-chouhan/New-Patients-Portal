@@ -77,7 +77,7 @@ const navigate = useNavigate();
                     <a href="" onClick={()=>navigate('./Sidebar')} >Sigup</a>
 				</div>
                 <div className="mt-3 text-center signup">
-                    <a href="#">Forgot Your Password</a>
+                    <a href="#" onClick={()=>navigate('./AppontmentConfirmation')} >Forgot Your Password</a>
                 </div>
                 
                             

@@ -14,6 +14,7 @@ import { IoMdContact } from "react-icons/io";
 import HomeStarRating from "./HomeStarRating";
 import TimeLine from "./TimeLine";
 import ModalsPopup from "../Feedback/ModalsPopup";
+import HomeModel from "./HomeModel";
 
 
 
@@ -23,6 +24,12 @@ function HomeTab(props) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = (breakpoint) => 
+  {
+    setShow(true);
+    setFullscreen(breakpoint);
+
+  }
+  const Referfiend = (breakpoint) => 
   {
     setShow(true);
     setFullscreen(breakpoint);
@@ -41,7 +48,7 @@ function HomeTab(props) {
 
             <img
               className="imgProfile"
-              src="https://qapatientportal.sikkasoft.com/90c47ccf30dcc44e46f071d168298930.png"
+              src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="130px"
               alt=""
               />
               <div className="header"><h6>Welcome</h6></div>
@@ -100,7 +107,7 @@ style={{ marginTop:"80px" }}
    <HomeStarRating />
 
     <div>
-      <button className="btn   Sectionbutton" style={{float:"center"}} >Refer a friend</button>
+      <button className="btn   Sectionbutton" style={{float:"center"}} onClick={Referfiend} >Refer a friend</button>
       <button className="btn   Sectionbutton" style={{float:"center"}} >Send Message</button>
     </div>
     
@@ -116,6 +123,10 @@ style={{ marginTop:"80px" }}
       </div>
     </div>
     <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} fullscreen={fullscreen} />
+  
+    <div>
+    <ModalsPopup handleClose={handleClose} show={show} Referfiend={Referfiend} fullscreen={fullscreen} />
+    </div>
               </div>
   );
 }

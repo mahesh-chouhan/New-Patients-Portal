@@ -16,7 +16,7 @@ function Appointment(props) {
   const values = [true, 'sm-down', 'md-down', 'lg-down', 'xl-down', 'xxl-down'];
   return (
     <>
-      {/* <hr id="hrline" style={{width:"100%"}} /> */}
+      <hr id="hrline" style={{width:"100%"}} />
       <br />
     <div className="Appointment_section">
       <div className="container-fluid">
@@ -47,7 +47,7 @@ function Appointment(props) {
                       marginRight: "5px",
                       marginTop:"-3px",
                        
-                      color: "#fff ",
+                      color: "black ",
                     }} />  Request an Appointment
                    
                   </button>

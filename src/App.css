@@ -3,11 +3,15 @@
     --ghost-white: #f8f9fd;
     --white:white;
     --font-black:black;
-    --header-color: #fbfafd;
+    /* --header-color: #fbfafd; */
+    --header-color: rgba(110, 29, 162,0.1);
+   
     --header-img-color:linear-gradient(to bottom, #f6f3fc, #fbfafe);
     --fire-bush: #6e1da2;
     --sky-bush: #0d6efd;
     --sky-bush-hover: #3665e7;
+    --yellow-bush: #ffcb3b;
+    --yellow-bush-hover: #ffbb00;
     --granite-gray: gray;
     --baltic-sea: #33383c;
     --trans: all 0.5s ease-in-out;

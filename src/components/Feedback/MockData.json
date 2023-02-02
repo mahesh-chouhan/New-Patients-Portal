@@ -1,0 +1,72 @@
+{
+    "questions": [
+      {
+        "id": 1,
+       
+        "question": "How would you rate your overall visit?",
+        "options": [
+          "Excellent",
+          "Very good",
+          "Average",
+          "Not so good"
+        ],
+        "answer": "Excellent"
+      },
+      {
+       "id": 2,
+        "question": "When your appointment was over, did you have a good understanding of your situation?",
+        "options": [
+          "Yes",
+          "No",
+          "I wish I knew more about my situation",
+          "All of the above"
+        ],
+        "answer": "yes"
+      },
+      {
+       "id": 3,
+        "question": "I wish I knew more about my situation",
+        "options": [
+          "yes",
+          "No",
+          "I already understand my financial options",
+          "All of the above"
+        ],
+        "answer": "All of the above"
+      },
+      {
+       "id": 4,
+       "question": "Did you have to wait over 15 minutes past your appointment time to be seated? if so how long?",
+        "options": [
+          "No",
+          "15 to 30 minutes",
+          "30 to 45 minutes",
+          "over 45 minutes"
+        ],
+        "answer": "15 to 30 minuts"
+      },
+      {
+       "id": 5,
+        "question": "Did the staff greet you properly?",
+        "options": [
+          "Yes",
+          "No",
+          "Do not recall",
+          "All of the above"
+        ],
+        "answer": "no"
+      },
+      {
+       "id": 6,
+       "question": "Would you refer your friends and family to our office?",
+        "options": [
+          "Yes",
+          "No",
+          "Not Sure",
+          "All of the above"
+        ],
+        "answer": "yes"
+      }
+     
+    ]
+  }

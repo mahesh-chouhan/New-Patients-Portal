@@ -1,0 +1,41 @@
+
+.insurance-content {
+
+}
+
+.carddesign{
+    height: 45vh !important;
+    background-color: var(--header-color) !important;
+}
+.carddesign:hover{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 4px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.insurance-content p{
+    padding-left: 15px !important;
+}
+.insurance-content h4{
+    font-weight: 700 !important;
+    color: var(--fire-bush);
+    font-size: 1.6rem !important;
+    padding-left: 25px !important;
+    padding-top: 30px !important;
+}
+#spantext{
+    font-size: 1.1rem !important;
+    color: black !important;
+}
+.insurance-content span{
+    font-weight: 700 !important;
+    padding: 5px !important;
+}
+.change{
+    text-align: center !important;
+    justify-content: center !important;
+    width: 450px !important;
+    font-size: 1.2rem !important;
+    background-color: var(--yellow-bush) !important;
+    color: black !important;
+    margin-top: 1%;
+    font-weight: 700 !important;
+    border-radius: 25px !important;
+}
