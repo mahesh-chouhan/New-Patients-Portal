@@ -1,6 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import '../Styles/statement.css';
+import InsuranceModal from "./InsuranceModal";
+
 function Insurance() {
+  const [fullscreen, setFullscreen] = useState(true);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = (breakpoint) => 
+  {
+    setShow(true);
+    setFullscreen(breakpoint);
+
+  }
   return (
     <div>
 
@@ -60,14 +72,14 @@ function Insurance() {
         </div>
         </div>
         <div className="container text-center">
-        <button className="btn  change"> Change</button>
+        <button className="btn  change" onClick={handleShow}  > Change</button>
         </div>
       </div>
 <br />
 <br />
      
 
-
+<InsuranceModal handleClose={handleClose} show={show} handleShow={handleShow} fullscreen={fullscreen} />
 
     </div>
   );

@@ -13,14 +13,10 @@ html{
   margin-top: 1% !important;
 }
 .requestAppointments{
-
-
-  background:#FFCC00 !important;
-    
-    border: none;
+     background:#FFCC00 !important;
+     border: none;
     /*margin-left: 10px !important;*/
    width: 310px !important;
-   
     color: black !important;
     border-radius: 50px !important;
      font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
@@ -446,4 +442,7 @@ background-color: #cbc9c9 !important;
     background-color: #979797!important;
     border-radius: 100px;
   }
+}
+.ReferLabel label{
+  margin-top: 10px !important;
 }

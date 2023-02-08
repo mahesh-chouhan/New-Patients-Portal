@@ -1,0 +1,25 @@
+.InsuranceForm{
+    margin-bottom: 20px !important;
+}
+.Submit{
+    margin-top: 5px !important;
+    
+    background-color: var(--sky-bush) !important;
+    /* border: 2px solid var(--white) !important; */
+    color: var(--white) !important;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+}
+.InsuranceCancel{
+    margin-top: 5px !important;
+    background-color: #e4e3e3 !important;
+    margin-left: 10% !important;
+
+}
+.InsuranceForm h4{
+    color: var(--sky-bush) !important;
+    font-weight: 700;
+    font-size: 1.8rem !important;
+}
+.InsuranceForm h6{
+    font-weight: 600;
+}

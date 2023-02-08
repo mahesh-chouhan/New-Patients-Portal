@@ -6,7 +6,7 @@ import Modal from "react-bootstrap/Modal";
 
 import Header from "../Constants/Header";
 import ReferAsFriend from "./ReferAsFriend";
-function HomeModel({ show, handleClose, Referfiend, fullscreen }) {
+function HomeModel({ showed, handleCloseForReferFriend, Referfiend, fullscreen }) {
   return (
     <div>
       <section>
@@ -14,8 +14,8 @@ function HomeModel({ show, handleClose, Referfiend, fullscreen }) {
           scrollable={true}
           className="Full_Modal"
           fullscreen={fullscreen}
-          show={show}
-          onHide={handleClose}
+          show={showed}
+          onHide={handleCloseForReferFriend}
         >
           {<Header />}
           <Modal.Header closeButton>

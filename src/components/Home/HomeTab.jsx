@@ -22,7 +22,9 @@ import HomeModel from "./HomeModel";
 function HomeTab(props) {
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
+  const [showed, setShowed] = useState(false);
   const handleClose = () => setShow(false);
+  const handleCloseForReferFriend = () => setShowed(false);
   const handleShow = (breakpoint) => 
   {
     setShow(true);
@@ -31,7 +33,8 @@ function HomeTab(props) {
   }
   const Referfiend = (breakpoint) => 
   {
-    setShow(true);
+    console.log("mahesh Chouhan")
+    setShowed(true);
     setFullscreen(breakpoint);
 
   }
@@ -125,7 +128,7 @@ style={{ marginTop:"80px" }}
     <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} fullscreen={fullscreen} />
   
     <div>
-    <ModalsPopup handleClose={handleClose} show={show} Referfiend={Referfiend} fullscreen={fullscreen} />
+    <HomeModel handleCloseForReferFriend={handleCloseForReferFriend} showed={showed} Referfiend={Referfiend} fullscreen={fullscreen} />
     </div>
               </div>
   );

@@ -1,36 +1,64 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import data from "./MockData.json";
 import "../Styles/Feedback.css";
 import { FaCommentsDollar } from "react-icons/fa";
 function FeedbackSurvey() {
   const [textColor, setTextColor] = useState("black");
   const [isBlack, setIsBlack] = useState(true);
-  const [selected, setSelected] = useState();
+  const [selected, setSelected] = useState({});
+  const [checked, setChecked] = useState([]);
   const [color, setColor] = useState();
-  let mahesh= [];
-  const handleChange = event => {
-    const data = {selected};
-     mahesh = event.target.value
-    console.log(mahesh);
-   
-    setSelected(event.target.value);
-  };
 
+ useEffect (()=>{
+  let SomeArray=[];
+  for(let i=0;i<data.questions.length;i++){
+      SomeArray=[...SomeArray,{checked:false,Questions:data.questions[i].question,SelectedAnswers:"",RealAnswers:"",options:[]}];
+  }
+  
+  let selectedOption=SomeArray.map((item)=>{
+      return {
+          selectedQeustions:item.Questions,
+          SelectedAnsers:""
+      }
 
+  })
+  setChecked(selectedOption);
+  
+ },[])
+console.log(checked);
+  // let mahesh= [];
+  // let empty = 0;
+  // const handleChange = event => {
+  //   const data = {selected};
+  //    mahesh = event.target.value
+  //   console.log(mahesh);
+  //   console.log(data);
+  //   setSelected(event.target.value);
+  // };
 
+let answer = data.questions.map((item)=>{
+  return item.answer
+})
+console.log(answer)
 
   const handleChnageTextColor = (id) => {
-    if (selected.length >= 0) {
-      setIsBlack(!isBlack);
-      setTextColor("red" );
-    } else {
+       if(checked[id].SelectedAnswers){
+        
+         setIsBlack(!isBlack);
+         setTextColor("red" );
+         
+       }
+    else{
+
       setTextColor("black");
     }
+    
   };
 
   const ResetClick = () => {
     setColor(" ");
   };
+  console.log(checked)
   return (
     <div>
       <div className="container FeedbackSurvay">
@@ -64,15 +92,16 @@ function FeedbackSurvey() {
                       >
                       <input
                         key={id}
-                        required={true}
-                        
+                        required
                         class="form-check-input"
                         type="radio"
-                        
                         name={`${id}`}
-                        
                         value={option}
-                        onChange={handleChange}
+                        onChange={()=>{
+                          let optionClone=[...checked];
+                          optionClone[id].SelectedAnsers=option
+                          setChecked(optionClone)
+                        }}
                         />
                       {option}
                     </label>
@@ -97,10 +126,10 @@ function FeedbackSurvey() {
               rows="3"
             ></textarea>
             <p class="mt-1" style={{ fontSize: "14px" }}>
-              {" "}
+            
               <b>
                 Note : This feedback will be directly sent to your provider.
-              </b>{" "}
+              </b>
             </p>
           </div>
         </div>
