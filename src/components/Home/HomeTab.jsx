@@ -14,7 +14,8 @@ import { IoMdContact } from "react-icons/io";
 import HomeStarRating from "./HomeStarRating";
 import TimeLine from "./TimeLine";
 import ModalsPopup from "../Feedback/ModalsPopup";
-import HomeModel from "./HomeModel";
+import HomeModel from "./ModalPages/HomeModel";
+import UpdateModal from "./ModalPages/UpdateModal";
 
 
 
@@ -22,19 +23,30 @@ import HomeModel from "./HomeModel";
 function HomeTab(props) {
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
-  const [showed, setShowed] = useState(false);
+  const [toggled, setToggled] = useState(false);
+  // const [showed, setShowed] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const handleClose = () => setShow(false);
-  const handleCloseForReferFriend = () => setShowed(false);
+  // const handleCloseForReferFriend = () => setShowed(false);
+  const handleCloseForUpdateModal = () => setShowModal(false);
   const handleShow = (breakpoint) => 
   {
     setShow(true);
+    setToggled(!toggled);
     setFullscreen(breakpoint);
 
   }
-  const Referfiend = (breakpoint) => 
+  // const Referfiend = (breakpoint) => 
+  // {
+  //   console.log("mahesh Chouhan")
+  //   setShowed(true);
+  //   setFullscreen(breakpoint);
+
+  // }
+  const UpdateProfileModal = (breakpoint) => 
   {
     console.log("mahesh Chouhan")
-    setShowed(true);
+    setShowModal(true);
     setFullscreen(breakpoint);
 
   }
@@ -61,7 +73,7 @@ function HomeTab(props) {
                <div className="email"><p><MdEmail size={29} style={{marginRight:"4px",marginTop:"-3px" }} /><a href="#">kiran.darekar@gmail.com</a></p></div>
                <div className="visit" ><p><b>First Visit</b>:- 15/12/2021</p><span></span></div>
                <div  style={{marginTop:"-15px"}} className="visit" ><p><b>Last Visit</b>:-12/12/2022</p><span></span></div>
-                <div><button className="btn btn-primary update_button" >Update Profile</button></div>
+                <div><button className="btn btn-primary update_button" onClick={UpdateProfileModal} >Update Profile</button></div>
           
               </div>
 
@@ -110,7 +122,7 @@ style={{ marginTop:"80px" }}
    <HomeStarRating />
 
     <div>
-      <button className="btn   Sectionbutton" style={{float:"center"}} onClick={Referfiend} >Refer a friend</button>
+      <button className="btn   Sectionbutton" style={{float:"center"}} onClick={handleShow} >Refer a friend</button>
       <button className="btn   Sectionbutton" style={{float:"center"}} >Send Message</button>
     </div>
     
@@ -125,12 +137,15 @@ style={{ marginTop:"80px" }}
       
       </div>
     </div>
-    <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} fullscreen={fullscreen} />
+    <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} toggled={toggled} fullscreen={fullscreen} />
   
-    <div>
+    {/* <div>
     <HomeModel handleCloseForReferFriend={handleCloseForReferFriend} showed={showed} Referfiend={Referfiend} fullscreen={fullscreen} />
+    </div> */}
+    <div>
+    <UpdateModal handleCloseForUpdateModal={handleCloseForUpdateModal} showModal={showModal} UpdateProfileModal={UpdateProfileModal} fullscreen={fullscreen} />
     </div>
-              </div>
+    </div>
   );
 }
 

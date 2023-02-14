@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import './App.css';
 import Sidebar from "./components/SideBar/Sidebar";
 import AppontmentConfirmation from "./AppontmentConfirmation";
+import Signup from "./components/Signup/Signup";
 
 
 
@@ -16,7 +17,7 @@ function App() {
       <Route path="/" element={<Login />} />
       <Route path="Home" element={<Home />} />
       
-      <Route path="Sidebar" element={<Sidebar />} />
+      <Route path="Signup" element={<Signup />} />
       <Route path="AppontmentConfirmation" element={<AppontmentConfirmation />} />
 
       

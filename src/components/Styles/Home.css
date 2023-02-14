@@ -6,14 +6,16 @@
     padding-top: 20px;
     border: 0 !important;
     border: none !important;
-    font-size: 17px !important;
+    font-style: italic !important;
+    font-size: 1.1rem !important;
    
   }
+
   .nav-tabs .nav-link{
     border: 0 !important;
     border: none !important;
-    color: var(--granite-gray) !important;
-    display: flex;
+    /* color: var(--granite-gray) !important; */
+    display: flex !important;
  
 
 
@@ -21,13 +23,13 @@
    
   }
   .nav-tabs .nav-link a:hover{
-    color: var(--font-black) !important;
+    /* color: var(--font-black) !important; */
   }
  
   .nav-tabs .nav-item.show .nav-link:hover, .nav-tabs .nav-link:focus{
      
    
-    color: var(--fire-bush) !important;
+    /* color: var(--fire-bush) !important; */
     }
     .tabSpan{
       padding: .3rem;
@@ -37,25 +39,25 @@
     }
     
     .defaultActiveKey{
-        color: var(--fire-bush) !important;
+        /* color: var(--fire-bush) !important; */
       
     }
  
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
         border: 0 !important;
-        color: var(--fire-bush) !important;
+        /* color: var(--fire-bush) !important; */
         }
         .nav.nav-tabs .nav-link.active{
             /* color: var(--fire-bush) !important;
              */
-             border-bottom: 2px solid var(--fire-bush) !important;
-             color: var(--fire-bush) !important;
-            font-size: 1.3rem !important;
-            font-weight: 700;
+             border-bottom: 2px solid gray !important;
+             /* color: var(--fire-bush) !important; */
+            /* font-size: 1.3rem !important;
+            font-weight: 700; */
         }
         .nav.nav-tabs .nav-link :hover{
       
-          color: var(--fire-bush) !important;
+          /* color: var(--fire-bush) !important; */
         }
 
     .profileUpdate{
@@ -65,7 +67,7 @@
     .data-table1 {
       margin-bottom: 1% !important;
       margin-top: 5px;
-      border-top: 2px solid var(--granite-gray) !important;
+      border-top: 2px solid var(--fire-bush) !important;
       border-bottom: 1px solid var(--granite-gray) !important;
       border-left: 1px solid var(--granite-gray);
       border-top-left-radius: 8px;
@@ -92,7 +94,7 @@
     .data-table2 {
       margin-bottom: 2% !important;
       margin-top: 5px;
-      border-top: 2px solid var(--granite-gray) !important;
+      border-top: 2px solid var(--fire-bush) !important;
       border-bottom: 1px solid var(--granite-gray) !important;
       border-right: 1px solid var(--granite-gray);
       /* border-left: 1px solid var(--granite-gray); */
@@ -164,7 +166,7 @@
   }   .data-table3 {
     margin-bottom: 2% !important;
     margin-top: 5px;
-    border-top: 2px solid var(--granite-gray) !important;
+    border-top: 2px solid var(--fire-bush) !important;
     border-bottom: 1px solid var(--granite-gray) !important;
     border-right: 1px solid var(--granite-gray);
     border-left: 1px solid var(--granite-gray);
@@ -267,4 +269,34 @@
  margin-left: 15px !important;
  font-size: 1rem;
  margin-bottom: 5px !important;
+}
+ul.timeline-3 {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline-3:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline-3 > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline-3 > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid var(--sky-bush);
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
 }

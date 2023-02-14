@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ReferAsFriend() {
+function ReferAsFriend(props) {
+
   return (
     <div>
      <div className='container appointmentmodal'>

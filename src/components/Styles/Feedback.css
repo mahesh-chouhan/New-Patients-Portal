@@ -2,7 +2,7 @@
     font-size: 1.7rem;
     margin-top: 12px !important;
     padding: 12px;
-    color: var(--sky-bush);
+    /* color: var(--sky-bush); */
     font-family: var(--font-family);
 }
 .FeedbackSurvay{
@@ -19,7 +19,7 @@
 }
 .SurvayQuestion span{
     font-weight: 700;
-    color: var(--sky-bush);
+    /* color: var(--sky-bush); */
     font-family: var(--font-family);
     font-size: 1.1rem !important;
 }

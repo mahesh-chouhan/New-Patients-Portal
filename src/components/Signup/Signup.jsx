@@ -3,10 +3,10 @@ import "../Styles/Login.css";
 import { FaUserAlt } from "react-icons/fa";
 import { AiFillLock } from "react-icons/ai";
 import  sikkaLogo from '../../assets/sikkaLogo.png';
-import LoginFooter from "./LoginFooter";
+
 import { Link, useNavigate } from "react-router-dom";
 import Password from "antd/es/input/Password";
-function Login() {
+function Signup() {
   const [state, setState] = useState({
     username: "",
     password: "",
@@ -31,7 +31,7 @@ const navigate = useNavigate();
         <div className="col-md-6 login-left-column col d-flex align-items-center justify-content-center">
           <div className="m-5">
            
-            <h1>Welcome To <br></br> patient Home Page</h1>
+            <h1>Welcome To <br></br>  Signup Page</h1>
           </div>
         </div>
         <div className="col-md-6 Login-Page">
@@ -40,6 +40,23 @@ const navigate = useNavigate();
                     <div className="text-center mb-5 mt-3">
                   <img src={sikkaLogo} />
                         
+                    </div>
+                    <div className="input-group flex-nowrap mb-4">
+                        <span className="input-group-text" style={{ background:"#f5f1fc",border:"1px solid #5783ff" }}>
+                            <FaUserAlt
+                            size={20}
+                            style={{ color: "#6e1da2" }}
+                            />
+                        </span>
+                        <input
+                            type="text"
+                            className="form-control w-100"
+                            placeholder="Email"
+                            name="email"
+                            value={state.email}
+                            onChange={HandleChange}
+                            required
+                            />
                     </div>
                     <div className="input-group flex-nowrap mb-4">
                         <span className="input-group-text" style={{ background:"#f5f1fc",border:"1px solid #5783ff" }}>
@@ -75,6 +92,23 @@ const navigate = useNavigate();
                             required
                             />
                     </div>
+                    <div className="input-group flex-nowrap position-relative mb-4">
+                        <span className="input-group-text" style={{ background:"#f5f1fc", border:"1px solid #5783ff" }}>
+                        <AiFillLock
+                        size={20}
+                        style={{ color: "#6e1da2" }}
+                        />
+                        </span>
+                        <input
+                            type='password'
+                            className="form-control w-100"
+                            placeholder="Confirm-Password"
+                            name="password"
+                            value={state.confirm_password}
+                            onChange={HandleChange}
+                            required
+                            />
+                    </div>
 
                     <div className="mb-4">
                         <input
@@ -84,16 +118,14 @@ const navigate = useNavigate();
                             style={{ border: "1px solid #ced4da",  accentColor: "#0d6efd",  marginTop:"-15px" }}
                             />
                         Remember me
-                        <button  className=" btn button__text" onClick={HandleClick}>Login
+                        <button  className=" btn button__text" onClick={HandleClick}>Signup
                            </button>
                         </div>
                                 <div className="mt-5 signup">
-			           Don't have an account?
-                    <a href="" onClick={()=>navigate('./Signup')} >Sigup</a>
+			         have an account?
+                    <a href="" onClick={()=>navigate('/')} >Login Here</a>
 				</div>
-                <div className="mt-3 text-center signup">
-                    <a href="#" onClick={()=>navigate('./AppontmentConfirmation')} >Forgot Your Password</a>
-                </div>
+                
                 
                             
                        
@@ -105,9 +137,9 @@ const navigate = useNavigate();
         
       </div>
     </div>
-      <LoginFooter />
+
 </div>
   );
 }
 
-export default Login;
+export default Signup;

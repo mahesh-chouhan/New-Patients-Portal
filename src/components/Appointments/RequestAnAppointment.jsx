@@ -112,6 +112,7 @@ const options = [
 ];
 function RequestAnAppointment() {
   const [startdate, setStartDate] = useState(new Date());
+  const [checkData, setCheckData] = useState();
 
   const countriesList = countries.map((item, i) => {
     return (
@@ -120,8 +121,10 @@ function RequestAnAppointment() {
       </option>
     );
   });
-  const onChange = (checkedValues) => {
+  const HandleChange = (checkedValues, e) => {
     console.log("checked = ", checkedValues);
+     setCheckData(checkData);
+    setStartDate(startdate);
   };
   return (
     <div>
@@ -134,6 +137,7 @@ function RequestAnAppointment() {
             className="form-select"
             style={{ border: "1px solid #5783ff" }}
             aria-label=".form-select-sm example"
+            
           >
             {countriesList}
           </select>
@@ -144,7 +148,7 @@ function RequestAnAppointment() {
           <DatePicker
             style={{ border: "1px solid #5783ff", borderRadius: "8px" }}
             selected={startdate}
-            onChange={(date) => setStartDate(date)}
+            onChange={HandleChange}
           />
         </div>
 
@@ -165,7 +169,7 @@ function RequestAnAppointment() {
         >
           {options.map((item) => (
             <label className="form-check-label">
-              <input type="checkbox" class="form-check-input" />
+              <input type="checkbox" class="form-check-input"   onChange={(e)=>{setCheckData(console.log(e.target.checked))}}/>
               {item.label}
             </label>
           ))}
@@ -176,7 +180,7 @@ function RequestAnAppointment() {
           <DatePicker
             style={{ border: "1px solid #5783ff", borderRadius: "8px" }}
             selected={startdate}
-            onChange={(date) => setStartDate(date)}
+            onChange={HandleChange}
           />
         </div>
         <label style={{ marginTop: "18px" }}>Time: </label>
@@ -196,7 +200,7 @@ function RequestAnAppointment() {
         >
           {options.map((item) => (
             <label className="form-check-label">
-              <input type="checkbox" class="form-check-input" />
+              <input type="checkbox" class="form-check-input" value={options}  onChange={(e)=>HandleChange} />
               {item.label}
             </label>
           ))}

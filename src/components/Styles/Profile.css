@@ -1,0 +1,81 @@
+.Profile-content h4{
+    color: var(--fire-bush);
+    font-size: 2.2rem;
+    padding: 1rem;
+    padding-left: 4rem
+ 
+}
+/* .Profile-content{
+    height: 200px !important;
+    background-color: var(--header-color);
+    border-top-left-radius: 100px !important;
+} */
+.ProfileUpdate{
+    height: 200px !important;
+    background: url('https://c1.wallpaperflare.com/preview/78/710/399/drip-water-mirroring-wave.jpg');
+    border-top-left-radius: 100px !important;
+}
+.profileHead{
+    padding-top: 12px !important;
+    font-family: var(--font-family);
+}
+.ChangePassword{
+    background:#ffcb3b !important;
+    border: none;
+    margin-top: 4% !important;
+   /*margin-left: 10px !important;*/
+  width: 250px !important;
+   color: black !important;
+   border-radius: 50px !important;
+    font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+   margin-left: 18% !important;
+   font-size: 18px;
+  
+   font-weight: 700 !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+   /* border: none;
+   background-color: var(--sky-bush) !important;
+   float: right !important;
+  
+    width: 310px;
+   color: var(--white) !important;
+   justify-content: end;
+   align-items: flex-end !important;
+   float: inline-end !important;
+    position: relative;
+    margin-right: -3% !important;
+   font-size: 1.1rem !important;
+   border-radius: 25px !important; 
+   margin-bottom: 30px !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important; */
+ }
+ @media only screen and (max-width: 600px) {
+   .ChangePassword {
+  margin-bottom: 10px !important;
+   }
+ }
+ .ChangePassword:hover{
+   background-color: var(--yellow-bush-hover) !important;
+   /* box-shadow:  1px 1px 2px 0 rgba(255,255,255,.5),
+               -2px -2px 4px 0 rgba(116, 125, 136, .5), 
+     inset -2px -2px 4px 0 rgba(255,255,255,.2),
+     inset 2px 2px 4px 0 rgba(0, 0, 0, .4); */
+
+ }
+ .DeleteAccount{
+  
+    background-color: #e4e3e3 !important;
+    border: none;
+    margin-top: 4% !important;
+   /*margin-left: 10px !important;*/
+  width: 250px !important;
+   color: black !important;
+   border-radius: 50px !important;
+    font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+  
+   font-size: 18px;
+  float: right !important;
+   font-weight: 700 !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+
+}

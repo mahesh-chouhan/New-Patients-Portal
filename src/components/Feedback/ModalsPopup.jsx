@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Header from '../Constants/Header';
+import ReferAsFriend from '../Home/ModalPages/ReferAsFriend';
 import FeedbackSurvey from './FeedbackSurvey';
 
 
 
-    function ModalsPopup({show,handleClose,handleShow , fullscreen}) {
+    function ModalsPopup({show,handleClose,handleShow , toggled, fullscreen}) {
         
 
   
@@ -31,7 +32,10 @@ import FeedbackSurvey from './FeedbackSurvey';
         }} >
        
          {
-          <FeedbackSurvey />
+        !toggled &&<FeedbackSurvey />
+         }
+         {
+          toggled ? <FeedbackSurvey />:<ReferAsFriend />
          }
          
         </Modal.Body>

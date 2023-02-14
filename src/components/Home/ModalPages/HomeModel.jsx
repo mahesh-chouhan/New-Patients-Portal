@@ -4,9 +4,14 @@ import Modal from "react-bootstrap/Modal";
 
 
 
-import Header from "../Constants/Header";
+import Header from "../../Constants/Header";
 import ReferAsFriend from "./ReferAsFriend";
+
 function HomeModel({ showed, handleCloseForReferFriend, Referfiend, fullscreen }) {
+
+   
+
+
   return (
     <div>
       <section>

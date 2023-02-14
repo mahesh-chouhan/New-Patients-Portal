@@ -3,7 +3,10 @@ import data from "./MockData.json";
 import "../Styles/Feedback.css";
 import { FaCommentsDollar } from "react-icons/fa";
 function FeedbackSurvey() {
-  const [textColor, setTextColor] = useState("black");
+  const [textColor, setTextColor] = useState(
+    data.questions.map((item)=>{
+    return {color:"black"}
+  }));
   const [isBlack, setIsBlack] = useState(true);
   const [selected, setSelected] = useState({});
   const [checked, setChecked] = useState([]);
@@ -15,10 +18,11 @@ function FeedbackSurvey() {
       SomeArray=[...SomeArray,{checked:false,Questions:data.questions[i].question,SelectedAnswers:"",RealAnswers:"",options:[]}];
   }
   
-  let selectedOption=SomeArray.map((item)=>{
+  let selectedOption=SomeArray.map((item,itemIndex)=>{
       return {
           selectedQeustions:item.Questions,
-          SelectedAnsers:""
+          SelectedAnsers:"",
+          index:itemIndex
       }
 
   })
@@ -41,17 +45,18 @@ let answer = data.questions.map((item)=>{
 })
 console.log(answer)
 
-  const handleChnageTextColor = (id) => {
-       if(checked[id].SelectedAnswers){
-        
-         setIsBlack(!isBlack);
-         setTextColor("red" );
-         
-       }
-    else{
-
-      setTextColor("black");
-    }
+  const handleChnageTextColor = () => {
+       checked?.map((item,itemIndex)=>{
+          if(item.SelectedAnsers){
+            let textColorClone=[...textColor];
+            textColorClone[itemIndex].color="black"
+            setTextColor(textColorClone)
+          }else{
+            let textColorClone=[...textColor];
+            textColorClone[itemIndex].color="red"
+            setTextColor(textColorClone)
+          }
+       })
     
   };
 
@@ -63,7 +68,7 @@ console.log(answer)
     <div>
       <div className="container FeedbackSurvay">
         <div>
-          <h4 style={{ color: textColor }}>
+          <h4>
             <FaCommentsDollar
               size={40}
               style={{ marginRight: "5px", marginTop: "-5px" }}
@@ -78,7 +83,7 @@ console.log(answer)
             <form>
               
             <div className="container SurvayQuestion" key={id}>
-              <span style={{ color: textColor }}> {questions.question}</span>
+              <span style={{ color: textColor[id].color }}> {questions.question}</span>
 
               {questions.options.map((option, i) => {
                 return (
@@ -115,7 +120,7 @@ console.log(answer)
           );
         })}
         <div className="SurvayQuestion">
-          <span style={{ color: textColor }}>
+          <span>
             Tell us about your experience with our office. Please add your name,
             and your response may be posted on google. Thank you.
           </span>

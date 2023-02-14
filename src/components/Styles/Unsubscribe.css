@@ -1,0 +1,83 @@
+.UnsubscribePage h1{
+    margin-top: 25px !important;
+    /* text-align: center !important; */
+    padding-top: 25px !important;
+    font-size: 1.5rem;
+    
+    font-weight: 500;
+  
+    /* color: #6e1da2; */
+}
+
+.UnsubscribePage{
+    background-color: white !important;
+    width: 680px !important;
+    border-radius: 11px !important;
+  max-width: calc(100% - 20px) !important;
+  
+  background-color:  white !important; 
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 4px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+margin-bottom: 25px !important;
+  }
+  .login__input {
+	border: none !important;
+	border-bottom: 1px solid #D1D1D4 !important;
+	background: none;
+
+	color: black !important;
+	font-weight: 700 !important;
+	width: 100% !important;
+
+}
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none !important;
+    border-bottom: 2px solid #6e1da2 !important;
+	border-bottom-color: #6e1da2 !important;
+}
+.UnsubscribeSubmit{
+    background:#ffcb3b !important;
+    border: none;
+    margin-top: 15% !important;
+   /*margin-left: 10px !important;*/
+   margin-bottom: 5% !important;
+   color: black !important;
+   border-radius: 50px !important;
+    font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+   margin-left: 8% !important;
+   font-size: 18px;
+  
+   font-weight: 700 !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important; 
+}
+.Cancel{
+  
+    background-color: #e4e3e3 !important;
+    border: none;
+    
+   /*margin-left: 10px !important;*/
+   margin-top: 15% !important;
+   color: black !important;
+   border-radius: 50px !important;
+    font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+   margin-right: 20px !important;
+   font-size: 18px;
+  float: right !important;
+   font-weight: 700 !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+
+}
+.form-group span{
+    font-weight: 700;
+    font-size: 15px !important;
+    
+}
+.text-area{
+    margin-top: 40px !important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black !important;
+    opacity: 1; /* Firefox */
+  }
+  

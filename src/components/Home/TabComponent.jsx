@@ -38,13 +38,14 @@ function TabComponent() {
           <Tab
             eventKey="HomeTab"
             title={
-              <span>
+              <span style={{ color:"#228b22" }}>
                 <AiTwotoneHome
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
+                   
                   }}
-                  size={24}
+                  size={40}
                 />
                 Home
               </span>
@@ -55,13 +56,13 @@ function TabComponent() {
           <Tab
             eventKey="Appointment"
             title={
-              <span>
+              <span style={{ color:"#17a2b8" }}>
                 <BsFillCalendarPlusFill
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={32}
                 />
                 Appointments
               </span>
@@ -72,14 +73,14 @@ function TabComponent() {
           <Tab
             eventKey="Statement"
             title={
-              <span>
+              <span style={{ color:"red" }}>
                 {" "}
                 <BsStickiesFill
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={32}
                 />
                 Statement
               </span>
@@ -90,13 +91,13 @@ function TabComponent() {
           <Tab
             eventKey="AccountRecivable"
             title={
-              <span>
+              <span style={{ color:"rgb(101, 160, 84)" }}>
                 <AiTwotoneFileText
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Accounts Receivable
               </span>
@@ -107,13 +108,13 @@ function TabComponent() {
           <Tab
             eventKey="TreatmentPlans"
             title={
-              <span>
+              <span style={{ color:"#AA336A" }}>
                 <FaClipboard
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Treatment Plans
               </span>
@@ -124,13 +125,13 @@ function TabComponent() {
           <Tab
             eventKey="Insurance"
             title={
-              <span>
+              <span style={{ color:"#ffcb3b" }}>
                 <AiTwotoneInsurance
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Insurance
               </span>
@@ -141,13 +142,13 @@ function TabComponent() {
           <Tab
             eventKey="ClaimStatus"
             title={
-              <span>
+              <span style={{ color:"#9c27b0" }}>
                 <FaPenSquare
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Claim Status
               </span>
@@ -158,13 +159,13 @@ function TabComponent() {
           <Tab
             eventKey="MassageBox"
             title={
-              <span>
+              <span style={{ color:"#6c757d" }}>
                 <RiMessage2Fill
                   style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Message(s)
               </span>
