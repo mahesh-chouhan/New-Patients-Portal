@@ -32,7 +32,7 @@ function HomeTab(props) {
   const handleShow = (breakpoint) => 
   {
     setShow(true);
-    setToggled(!toggled);
+   
     setFullscreen(breakpoint);
 
   }

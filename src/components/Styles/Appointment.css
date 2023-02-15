@@ -191,7 +191,7 @@ background-image: var(--header-img-color) !important;
 margin-left: 10px !important;
 margin-top: 10px;
 float: right !important;
-color: #7B7B7B;
+color: #7B7B7B !important;
 }
 .search-label span{
     display: none !important;

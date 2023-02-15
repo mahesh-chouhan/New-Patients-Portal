@@ -2,7 +2,7 @@ import React from 'react'
 import '../Styles/Unsubscribe.css'
 function ClaimStatus() {
   return (
-    <div style={{ background:"#e6effa" }}>
+    <div >
       <br />
       <br />
       <div className='container UnsubscribePage'>

@@ -32,10 +32,10 @@ import FeedbackSurvey from './FeedbackSurvey';
         }} >
        
          {
-        !toggled &&<FeedbackSurvey />
+       
          }
          {
-          toggled ? <FeedbackSurvey />:<ReferAsFriend />
+          toggled == false ? <FeedbackSurvey />:<ReferAsFriend />
          }
          
         </Modal.Body>

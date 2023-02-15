@@ -52,6 +52,7 @@ const defaultSorted = [
     order: "desc",
   },
 ];
+console.log(defaultSorted);
 
 const pagination = paginationFactory({
   sizePerPage: 5,
