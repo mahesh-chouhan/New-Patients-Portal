@@ -1,0 +1,33 @@
+.data-table-claim{
+    border: 1px solid gray !important;
+    border-radius: 8px !important;
+}
+@media only screen and (max-width: 600px){
+    .data-table-claim{
+        margin-bottom: 20px !important;
+    }
+}
+.data-table-claim table th{
+  /* border-bottom: none !important; */
+
+  border-radius: none !important;
+  border-bottom-left-radius: 8px !important;
+}
+@media only screen and (max-width: 600px){
+
+    .data-table-claim{
+        overflow-x: scroll !important;
+    }
+   .data-table-claim::-webkit-scrollbar {
+        width: 8px !important;
+      }
+     .data-table-claim::-webkit-scrollbar-track {
+        background-color: #e2e2e2;
+        border-radius: 100px;
+      }
+      
+     .data-table-claim::-webkit-scrollbar-thumb {
+        background-color: #979797!important;
+        border-radius: 100px;
+      }
+}

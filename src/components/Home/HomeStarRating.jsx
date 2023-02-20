@@ -6,7 +6,7 @@ function HomeStarRating() {
     <div>
         <span className="starRating" style={{fontWeight:"700" }}>
             Give your rate
-            <Rate defaultValue={5}   size={26} />
+            <Rate defaultValue={5}size={35} style={{color:"#ffcb3b"}} />
       
         </span>
     </div>

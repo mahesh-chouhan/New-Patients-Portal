@@ -110,7 +110,7 @@ const options = [
     value: "07:30 pm",
   },
 ];
-function RequestAnAppointment() {
+function Rappointment() {
   const [startdate, setStartDate] = useState(new Date());
  
   const [checkData, setCheckData] = useState({
@@ -139,6 +139,8 @@ function RequestAnAppointment() {
   };
   return (
     <div>
+        <br />
+        <br />
       <div className="container appointmentmodal">
         <h4 className="Appointment-Heading">Request an appointment</h4>
 
@@ -147,10 +149,8 @@ function RequestAnAppointment() {
           <select
             className="form-select"
             style={{ border: "1px solid #5783ff" }}
-            aria-label=".form-select-sm example"
-            
-          >
-            {countriesList}
+            aria-label=".form-select-sm example" 
+          >{countriesList}
           </select>
         </div>
 
@@ -265,8 +265,10 @@ function RequestAnAppointment() {
           </div>
         </div>
       </div>
+      <br />
+      <br />
     </div>
   );
 }
 
-export default RequestAnAppointment;
+export default Rappointment;

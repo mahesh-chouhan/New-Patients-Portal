@@ -8,7 +8,7 @@
     --curve: 40;
     --theme-box-shadow-light:#0000001c;
         --theme-box-shadow-medium: #00000021;
-        font-family: 'Helvetica Neue', sans-serif !important;
+        font-family: var(--font-family) !important; 
   }
 body{
     /* background-color:#f5f1fc !important; */
@@ -19,7 +19,7 @@ body{
     background-color: #e6effa;
 }
 .container{
-    font-family: 'Helvetica Neue', sans-serif !important;
+    font-family: var(--font-family) !important; 
 
 }
 .input[type=checkbox] {
@@ -96,7 +96,7 @@ body{
 }
 .signup a{
     text-decoration: none;
-            font-family: 'Helvetica Neue', sans-serif !important;
+            font-family: var(--font-family) !important; 
 }
 .Remember{
     width: 25px !important;

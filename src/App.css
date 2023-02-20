@@ -18,9 +18,9 @@
     --curve: 40;
     --theme-box-shadow-light:#0000001c;
         --theme-box-shadow-medium: #00000021;
-        --font-family: "DM Sans", sans-serif !important;
+        --font-family: 'Helvetica Neue', sans-serif !important;
   }
   html{
     
-    font-family: "DM Sans", sans-serif !important;
+    font-family: 'Helvetica Neue', sans-serif !important;
   }

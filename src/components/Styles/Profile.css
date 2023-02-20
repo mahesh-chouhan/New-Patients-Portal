@@ -1,8 +1,9 @@
 .Profile-content h4{
     color: var(--fire-bush);
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     padding: 1rem;
-    padding-left: 4rem
+    padding-left: 4rem;
+    font-weight: 700 !important;
  
 }
 /* .Profile-content{
@@ -11,9 +12,14 @@
     border-top-left-radius: 100px !important;
 } */
 .ProfileUpdate{
-    height: 200px !important;
-    background: url('https://c1.wallpaperflare.com/preview/78/710/399/drip-water-mirroring-wave.jpg');
+    height: 230px !important;
+    background: url('https://t3.ftcdn.net/jpg/04/91/82/80/360_F_491828086_mXVXHwXcRKdw9clctzfONJsCZyt2kNgK.jpg');
+    background-size: 100% !important;
+
+    /* background-size: contain !important; */
+/* background-repeat: no-repeat !important; */
     border-top-left-radius: 100px !important;
+    width: 100% !important;
 }
 .profileHead{
     padding-top: 12px !important;
@@ -27,7 +33,7 @@
   width: 250px !important;
    color: black !important;
    border-radius: 50px !important;
-    font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+   font-family: var(--font-family) !important; 
    margin-left: 18% !important;
    font-size: 18px;
   
@@ -71,7 +77,7 @@
   width: 250px !important;
    color: black !important;
    border-radius: 50px !important;
-    font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+   font-family: var(--font-family) !important; 
   
    font-size: 18px;
   float: right !important;

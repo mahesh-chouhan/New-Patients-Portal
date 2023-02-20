@@ -23,7 +23,7 @@ import { FaPenSquare } from "react-icons/fa";
 import { AiTwotoneInsurance } from "react-icons/ai";
 import { RiMessage2Fill } from "react-icons/ri";
 import Insurance from "../Insurance/Insurance";
-import ClaimStatus from "../Insurance/ClaimStatus";
+import ClaimStatus from "../Insurance/Claim_Status/ClaimStatus";
 import MassageBox from "../Inbox/MassageBox";
 import TreatmentPlans from "../TreatmentPlan/TreatmentPlans";
 import "../Styles/Home.css";

@@ -1,12 +1,15 @@
 import React from 'react'
-
+import ReferFriend from '../../../assets/ReferaFriend.png'
 function ReferAsFriend(props) {
 
   return (
     <div>
-     <div className='container appointmentmodal'>
-     
-     <h4>Refer a Friend</h4>
+     <div className='container UnsubscribePage'>
+     <h1>
+        <img src={ReferFriend} width="60px" alt="" style={{ paddingRight:"10px" }} />
+       Refer a Friend
+      </h1>
+      <hr />
      <div>
       <p>
         <b>
@@ -20,7 +23,7 @@ function ReferAsFriend(props) {
 
       </div>
       <div className='col-md-9'>
-        <label htmlFor="">Carmen Ensign</label>
+        <label htmlFor="" style={{ fontWeight:"700" }}>Carmen Ensign</label>
       </div>
 
      </div>
@@ -30,45 +33,31 @@ function ReferAsFriend(props) {
 
       </div>
       <div className='col-md-9'>
-        <label htmlFor="">kiran.darekar@gmail.com</label>
+        <label htmlFor="" style={{ fontWeight:"700" }} >kiran.darekar@gmail.com</label>
       </div>
 
      </div>
-     <div className='row ReferLabel'>
-      <div className='col-md-3'>
-        <label htmlFor="">Recipient's Email:</label> 
-
-      </div>
-      <div className='col-md-9'>
-        <br />
-
-        <input htmlFor="" className='form-control'></input>
-      </div>
-
-     </div>
-     <div className='row ReferLabel'>
-      <div className='col-md-3'>
-        <label htmlFor="">Message :</label> 
-
-      </div>
-      <div className='col-md-9'>
-        <br />
-      <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-      </div>
-
-     </div>
-     <br />
-     <div className="row ReferLabel">
-          <div className="col-md-8"></div>
-          <div className="col-md-4">
-            <button className="btn btn-send">Send</button>
-            <button className="btn btn-cancel">cancel</button>
-          </div>
+     <div>
+      <br />
+        <form action="" className='form-group'>
+        <input name='username' type="text" class="login__input" placeholder=" Recipient's Email:" />
+        <div className='text-area'>
+         
+          <span>
+         Message
+      
+          </span>
+        <textarea class="form-control" id="exampleFormControlTextarea1"  rows="3"></textarea>
         </div>
+       
+        </form>
+        <div className='row'>
+          <div className='col-md-7'></div>
+          <div className='col-md-5'><button className="btn UnsubscribeSubmit" >Send Message</button>
+            <button className="btn Cancel">Cancel</button></div>
+
+        </div>
+      </div>
 
      </div>
 

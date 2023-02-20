@@ -4,13 +4,16 @@
   margin: 0px !important;
 }
 body{
-    font-family: 'Helvetica Neue', sans-serif !important;
+    font-family: var(--font-family) !important; 
 }
 html{
-  font-family: 'Helvetica Neue', sans-serif !important;
+  font-family: var(--font-family) !important; 
 }
 .PracticeName{
   margin-top: 1% !important;
+}
+.PracticeName p{
+  font-size: 1.1rem !important;
 }
 .requestAppointments{
      background:#ffcb3b !important;
@@ -19,11 +22,11 @@ html{
    width: 310px !important;
     color: black !important;
     border-radius: 50px !important;
-     font-family: "Helvetica Neue LT W05 75 Bold", sans-serif !important; 
+   font-family: var(--font-family) !important; 
      margin-right: -3% !important;
     font-size: 18px;
     float: right !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
     /* border: none;
     background-color: var(--sky-bush) !important;
@@ -128,7 +131,9 @@ td {
 
 .table{
   border-collapse:collapse;
-  border-radius: 8px !important;
+  /* border-radius: 8px !important; */
+  border-top-right-radius: 8px !important;
+  border-top-left-radius: 8px !important;
   overflow: hidden !important;
 }
 .table th {
@@ -138,13 +143,14 @@ td {
   text-align: left !important;
   font-size: 1.2rem !important;
   /* border-top: 0.9px solid var(--fire-bush) !important; */
-  font-family: 'Helvetica Neue', sans-serif !important;
+ font-family: var(--font-family) !important; 
   font-weight: 500 !important;
   border-bottom: solid 0.5px rgba(0 0 0 / 70%)  !important;
+  /* border-bottom-left-radius: 8px !important; */
   /* border-top: 1px solid var(--granite-gray) !important; */
 }
 
-td:nth-child(2){
+/* td:nth-child(2){
   border-right:1px solid var(--white);
 }
 td:nth-child(3){
@@ -161,10 +167,14 @@ th:nth-child(3){
 }
 th:nth-child(1){
   border-right:1px solid var(--header-color);
-}
+} */
  
   
- 
+thead, tbody, tfoot,  td, th {
+
+  border-style: none !important;
+
+}
 
  
  
@@ -271,14 +281,14 @@ margin-right: 15% !important;
 } */
 .appointmentmodal {
   
-  overflow: scroll;
+ overflow: scroll;
   width: 580px !important;
   max-width: calc(100% - 20px) !important;
   /* box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 4px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
   border: 1px solid #ddd;
   border-radius: 8px !important;
   padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-right: 25px !important; 
   /* margin-bottom: 200px !important; */
 }
 .appointmentmodal h4{
@@ -295,7 +305,7 @@ margin-right: 15% !important;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   /* border-top: 0.9px solid var(--fire-bush) !important; */
-  font-family: 'Helvetica Neue', sans-serif !important;
+ font-family: var(--font-family) !important; 
   font-weight: 500 !important;
   
 }
@@ -345,7 +355,7 @@ margin-right: 15% !important;
   color: #fff;
 }
 .react-datepicker {
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+ font-family: var(--font-family) !important; 
   font-size: 0.8rem;
   background-color: white;
   color: #000;

@@ -5,6 +5,7 @@ import './App.css';
 import Sidebar from "./components/SideBar/Sidebar";
 import AppontmentConfirmation from "./AppontmentConfirmation";
 import Signup from "./components/Signup/Signup";
+import Rappointment from "./components/Rappointment";
 
 
 
@@ -18,6 +19,8 @@ function App() {
       <Route path="Home" element={<Home />} />
       
       <Route path="Signup" element={<Signup />} />
+      <Route path="Sidebar" element={<Sidebar />} />
+      <Route path="Rappointment" element={<Rappointment />} />
       <Route path="AppontmentConfirmation" element={<AppontmentConfirmation />} />
 
       

@@ -29,7 +29,7 @@ function Sidebar() {
       
 <br />
             <p style={{ marginTop:"20px" }} className="VerticleTab1">
-              <AiTwotoneHome size={24} style={{
+              <AiTwotoneHome size={35} style={{
                     marginRight: "5px",
                     marginTop: "-6px",
                   }} />
@@ -38,7 +38,7 @@ function Sidebar() {
           </Tab>
           <Tab>
             <p>
-              <BsFillCalendarPlusFill size={24} style={{
+              <BsFillCalendarPlusFill size={35} style={{
                     marginRight: "5px",
                     marginTop: "-5px",
                   }} />
@@ -52,7 +52,7 @@ function Sidebar() {
                   marginRight: "5px",
                   marginTop: "-5px",
                 }}
-                size={24}
+                size={35}
               />
               Statement
             </p>
@@ -65,7 +65,7 @@ function Sidebar() {
                   marginRight: "5px",
                   marginTop: "-5px",
                 }}
-                size={24}
+                size={35}
               />
               AR
             </p>
@@ -77,7 +77,7 @@ function Sidebar() {
                   marginRight: "5px",
                   marginTop: "-5px",
                 }}
-                size={24}
+                size={35}
               />
               Treatment Plans
             </p>
@@ -89,7 +89,7 @@ function Sidebar() {
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Insurance
             </p>
@@ -101,7 +101,7 @@ function Sidebar() {
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Claim Status
             </p>
@@ -113,7 +113,7 @@ function Sidebar() {
                     marginRight: "5px",
                     marginTop: "-5px",
                   }}
-                  size={24}
+                  size={35}
                 />
                 Message(s)
             </p>

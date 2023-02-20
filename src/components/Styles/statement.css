@@ -42,7 +42,7 @@
 .recharts-tooltip-wrapper{
     font-weight: 700;
     font-size: 1rem;
-    font-family: Roboto, sans-serif;
+    font-family: var(--font-family) !important; 
     background-color: #FCFEFC;
     stroke: none;
     box-shadow: rgba(110, 29, 162, 0.1) 0px 6px 1px, rgba(0,0,0,0.16) 0px 6px 2px, rgba(132, 86, 225, 0.23) 0px 8px 4px, rgba(0, 0, 0, 0.02) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -50,5 +50,5 @@
   }
   .recharts-cartesian-axis-tick {    
     font-size: 1rem;
-    font-family: Roboto, sans-serif;
+    font-family: var(--font-family) !important; 
 }

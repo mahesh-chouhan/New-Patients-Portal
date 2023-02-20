@@ -13,9 +13,12 @@ import { MdEmail } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import HomeStarRating from "./HomeStarRating";
 import TimeLine from "./TimeLine";
-import ModalsPopup from "../Feedback/ModalsPopup";
-import HomeModel from "./ModalPages/HomeModel";
-import UpdateModal from "./ModalPages/UpdateModal";
+import ModalsPopup from "../ModalPopup/ModalsPopup";
+
+import ReferAsFriend from "./ModalPages/ReferAsFriend";
+import FeedbackSurvey from "../Feedback/FeedbackSurvey";
+import UpdateProfile from "./ModalPages/UpdateProfile";
+import SendMessageModal from "./ModalPages/SendMessageModal";
 
 
 
@@ -23,35 +26,50 @@ import UpdateModal from "./ModalPages/UpdateModal";
 function HomeTab(props) {
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
+  const [showed, setShowed] = useState(false);
+  const [message ,setMessage ] = useState(false);
   const [toggled, setToggled] = useState(false);
-  // const [showed, setShowed] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const handleClose = () => setShow(false);
-  // const handleCloseForReferFriend = () => setShowed(false);
-  const handleCloseForUpdateModal = () => setShowModal(false);
-  const handleShow = (breakpoint) => 
-  {
+  
+
+  const handleShow = (breakpoint) => {
     setShow(true);
-   
+    setToggled(!toggled);
     setFullscreen(breakpoint);
 
   }
-  // const Referfiend = (breakpoint) => 
-  // {
-  //   console.log("mahesh Chouhan")
-  //   setShowed(true);
-  //   setFullscreen(breakpoint);
+  const handleClose = () => setShow(false);
 
-  // }
+
+  const Referfiend = (breakpoint) => {
+    console.log("mahesh Chouhan")
+    setShowed(true);
+    setFullscreen(breakpoint);
+
+  }
+  const handleCloseForReferFriend = () => setShowed(false);
+
+
+
+
   const UpdateProfileModal = (breakpoint) => 
   {
-    console.log("mahesh Chouhan")
+    // console.log("mahesh Chouhan")
     setShowModal(true);
     setFullscreen(breakpoint);
 
   }
 
- 
+  const handleCloseForUpdateModal = () => setShowModal(false);
+
+
+  const SendMessage = (breakpoint) => {
+    console.log("mahesh Chouhan")
+    setMessage(true);
+    setFullscreen(breakpoint);
+
+  }
+  const handleCloseMessage = () => setMessage(false);
   
   return (
     <div>
@@ -73,7 +91,7 @@ function HomeTab(props) {
                <div className="email"><p><MdEmail size={29} style={{marginRight:"4px",marginTop:"-3px" }} /><a href="#">kiran.darekar@gmail.com</a></p></div>
                <div className="visit" ><p><b>First Visit</b>:- 15/12/2021</p><span></span></div>
                <div  style={{marginTop:"-15px"}} className="visit" ><p><b>Last Visit</b>:-12/12/2022</p><span></span></div>
-                <div><button className="btn btn-primary update_button" onClick={UpdateProfileModal} >Update Profile</button></div>
+                <div><button className="btn  update_button" onClick={UpdateProfileModal} >Update Profile</button></div>
           
               </div>
 
@@ -122,8 +140,8 @@ style={{ marginTop:"80px" }}
    <HomeStarRating />
 
     <div>
-      <button className="btn   Sectionbutton" style={{float:"center"}} onClick={handleShow} >Refer a friend</button>
-      <button className="btn   Sectionbutton" style={{float:"center"}} >Send Message</button>
+      <button className="btn   Sectionbutton" style={{float:"center"}} onClick={Referfiend} >Refer a friend</button>
+      <button className="btn   Sectionbutton" style={{float:"center"}} onClick={SendMessage} >Send Message</button>
     </div>
     
         </div>
@@ -137,13 +155,16 @@ style={{ marginTop:"80px" }}
       
       </div>
     </div>
-    <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} toggled={toggled} fullscreen={fullscreen} />
+    <ModalsPopup handleClose={handleClose} show={show} handleShow={handleShow} Referfiend={Referfiend} toggled={toggled} fullscreen={fullscreen} children={<FeedbackSurvey />} />
   
-    {/* <div>
-    <HomeModel handleCloseForReferFriend={handleCloseForReferFriend} showed={showed} Referfiend={Referfiend} fullscreen={fullscreen} />
-    </div> */}
     <div>
-    <UpdateModal handleCloseForUpdateModal={handleCloseForUpdateModal} showModal={showModal} UpdateProfileModal={UpdateProfileModal} fullscreen={fullscreen} />
+    <ModalsPopup handleClose={handleCloseForReferFriend} show={showed} Referfiend={Referfiend} fullscreen={fullscreen} children={<ReferAsFriend />} />
+    </div>
+    <div>
+    <ModalsPopup handleClose={handleCloseForUpdateModal} show={showModal} UpdateProfileModal={UpdateProfileModal} fullscreen={fullscreen} children={<UpdateProfile />} />
+    </div>
+    <div>
+    <ModalsPopup handleClose={handleCloseMessage} show={message} SendMessage={SendMessage} fullscreen={fullscreen} children={<SendMessageModal />} />  
     </div>
     </div>
   );

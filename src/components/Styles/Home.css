@@ -6,8 +6,9 @@
     padding-top: 20px;
     border: 0 !important;
     border: none !important;
-    font-style: italic !important;
+  
     font-size: 1.1rem !important;
+    font-weight: 700 !important;
    
   }
 
@@ -34,8 +35,7 @@
     .tabSpan{
       padding: .3rem;
         margin-top: 5px;
-        
-        font-weight: 700;
+      
     }
     
     .defaultActiveKey{
@@ -82,6 +82,7 @@
         border-right: 1px solid gray !important;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+        height: 65vh !important;
       }
     }
      @media only screen and (max-width: 600px) {
@@ -89,6 +90,7 @@
         border-left: 1px solid gray !important;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
+        height: 65vh !important;
       }
     }
     .data-table2 {
@@ -141,23 +143,32 @@
     margin-top: 5%;
   }
   .update_button {
-    border: none;
-    background-color: var(--sky-bush) !important;
-   width: 250px;
-    padding: 7px 25px !important;
-    color: var(--white) !important;
-    justify-content: end;
-    align-items: flex-end !important;
-    float: inline-end !important;
-     position: relative;
-     box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
-    font-size: 1rem !important;
-    border-radius: 25px !important; 
-    margin-bottom: 30px !important;
+    /* background:#ffcb3b !important;
+    border: none !important;
 
+  width: 250px !important;
+   color: black !important;
+   border-radius: 50px !important;
+   font-family: var(--font-family) !important; 
+  
+   font-size: 18px;
+  
+   font-weight: 600 !important;
+   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important; */
+   border: 2px solid var(--sky-bush) !important;
+   width: 250px !important;
+   color: var(--sky-bush) !important;
+   border-radius: 50px !important;
+   font-family: var(--font-family) !important; 
+  
+   font-size: 18px;
+  
+   font-weight: 600 !important;
+   /* box-shadow: rgb(0 0 0 / 20%) 0px 1px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px !important;  */
   }
   .update_button:hover{
-    background-color: var(--sky-bush-hover) !important;
+     background-color: var(--sky-bush-hover) !important;
+     color: white !important;
   }
   .sectionHome{
 
@@ -177,6 +188,18 @@
     margin-left: 15px !important;
     border-collapse: collapse !important;
    }
+   @media only screen and (max-width: 600px) {
+    .data-table3 {
+      /* width: 380px !important; */
+      margin-left: 2px !important;
+    }
+  }
+   @media only screen and (max-width: 600px) {
+    .practice-activity {
+      width: 398px !important;
+     
+    }
+  }
    .practice-activity {
     background-image: var(--header-img-color);
     background-color: var(--header-color);
@@ -194,24 +217,48 @@
     border-bottom: 1px solid var(--granite-gray) !important;
    }
    .Sectionbutton{
-    border: none;
-    background-color: var(--sky-bush) !important;
+    /* background:#ffcb3b !important;
+    border: none !important;
     width: 220px;
     padding: 7px 25px !important;
-    color: var(--white) !important;
+    color: var(--black) !important;
     justify-content: end;
     align-items: flex-end !important;
     float: inline-end !important;
      position: relative;
      margin: 15px !important;
      margin-top: 28px !important;
-    font-size: 1rem !important;
+ 
     border-radius: 25px !important; 
     margin-bottom: 30px !important;
-    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important;
+    font-size: 18px;
+  
+    font-weight: 600 !important;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px !important; */
+    border: 2px solid var(--sky-bush) !important;
+    width: 220px !important;
+    color: var(--sky-bush) !important;
+    border-radius: 50px !important;
+    font-family: var(--font-family) !important; 
+    width: 220px;
+    font-size: 18px;
+    margin-top: 32px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    /* margin: 15px !important; */
+    font-weight: 600 !important;
    }
+
+
+   @media only screen and (max-width: 600px) {
+    .Sectionbutton {
+      margin-top: 15px !important;
+      width: 250px !important;
+    }
+  }
    .Sectionbutton:hover{
     background-color: var(--sky-bush-hover) !important;
+     color: white !important;
    }
    .Section2Head {
     text-align: center !important;

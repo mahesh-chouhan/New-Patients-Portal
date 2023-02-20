@@ -1,17 +1,11 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import Header from "../Constants/Header";
+import ReferAsFriend from "../Home/ModalPages/ReferAsFriend";
+import FeedbackSurvey from "../Feedback/FeedbackSurvey";
 
-
-
-import Header from "../../Constants/Header";
-import ReferAsFriend from "./ReferAsFriend";
-
-function HomeModel({ showed, handleCloseForReferFriend, Referfiend, fullscreen }) {
-
-   
-
-
+function ModalsPopup({ show,  handleClose, children, handleShow, toggled, fullscreen }) {
   return (
     <div>
       <section>
@@ -19,8 +13,8 @@ function HomeModel({ showed, handleCloseForReferFriend, Referfiend, fullscreen }
           scrollable={true}
           className="Full_Modal"
           fullscreen={fullscreen}
-          show={showed}
-          onHide={handleCloseForReferFriend}
+          show={show}
+          onHide={handleClose}
         >
           {<Header />}
           <Modal.Header closeButton>
@@ -33,9 +27,7 @@ function HomeModel({ showed, handleCloseForReferFriend, Referfiend, fullscreen }
               maxHeight: "calc(95vh - 120px)",
             }}
           >
-            {
-                <ReferAsFriend />
-            }
+            {children} 
           </Modal.Body>
         </Modal>
       </section>
@@ -43,4 +35,4 @@ function HomeModel({ showed, handleCloseForReferFriend, Referfiend, fullscreen }
   );
 }
 
-export default HomeModel;
+export default ModalsPopup;
